@@ -40,7 +40,7 @@ def score(target, submit, shape_num):
             if cand[1] > 1.8:
                 continue
             # 매칭 점수가 0.3 이하이고, 사이즈가 20% 이하로 차이나면 성공
-            elif 1.0 <= cand[1] <= 1.8:
+            elif 0.8 <= cand[1] <= 1.8:
                 if cand[0] <= 4.3:
                     return 'success'
             # 사이즈로 정렬했기 때문에 이 뒤로는 볼 필요도 없이 실패
@@ -54,7 +54,7 @@ def score(target, submit, shape_num):
             if cand[1] > 1.5:
                 continue
             # 매칭 점수가 0.3 이하이고, 사이즈가 20% 이하로 차이나면 성공
-            elif 1.0 <= cand[1] <= 1.5:
+            elif 0.8 <= cand[1] <= 1.5:
                 if cand[0] <= 1.5:
                     return 'success'
             # 사이즈로 정렬했기 때문에 이 뒤로는 볼 필요도 없이 실패
